@@ -20,7 +20,7 @@ if playing.lower() != "yes":
     quit()
 
 print("Let's play, then...")
-print
+
 for index, item in enumerate(questionsAndAnswers):
     answer = input(str(index + 1) + "/" + str(len(questionsAndAnswers)) + " - " + item[0])
     checkAnswer(answer.lower(), item[1])
